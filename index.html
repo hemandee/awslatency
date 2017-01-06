@@ -35,7 +35,7 @@
         data.addRows(pingData);
 
         table = new google.visualization.Table(document.getElementById('table_div'));
-        table.draw(data, {showRowNumber: false, width: '100%', height: '100%', desc: true});
+        table.draw(data, {showRowNumber: false, width: '100%', height: '100%', sortAscending : true, sortColumn: 2});
       }
         function updateIT(){
             document.getElementById("testButton").disabled=true;
@@ -74,6 +74,9 @@
       </script>
   </head>
   <body>
+      <header>
+      AWS Latency Region Checker
+      </header>
       <button id="testButton" onclick="drawTable()">Run Latency Test!</button>
     <div id="table_div" style="height: 50%"></div>
     <div id="chart_div"></div>
