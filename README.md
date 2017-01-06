@@ -1,2 +1,2 @@
 # awslatency
-Displays Latency to AWS Regions
+Simple Web Page that displays the latency from your browser to AWS Regions
